@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ricky_and_morty_challenge/theme/app_colors.dart';
+import 'package:ricky_and_morty_challenge/theme/app_images.dart';
 
 class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
   const AppBarWidget({
@@ -18,7 +19,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return Container(
       color: AppColors.appBarBackground,
-      height: kToolbarHeight * 2.2, // ← Aqui você usa o cálculo
+      height: kToolbarHeight * 2.2, 
       child: SafeArea(
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -33,7 +34,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
                 child: Column(
 
                   children: [
-                    Image.asset('assets/logo.png'),
+                    Image.asset(AppImages.logo),
                     Text(
                       title,
                       style: TextStyle(
@@ -49,8 +50,10 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(16.0),
-              child: Icon(
-                Icons.person,
+              child: Image.asset(
+                AppImages.person,
+                width: 24,
+                height: 24,
                 color: AppColors.rightIconColor,
               ),
             ),
