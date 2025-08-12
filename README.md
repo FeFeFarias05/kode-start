@@ -1,7 +1,7 @@
 # 🛸 Rick and Morty Challenge 🛸  
 
 <div align="center">
-  <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="Rick and Morty" width="200" />
+  <img src="https://images7.alphacoders.com/133/1335145.jpg" alt="Rick and Morty" width="400" />
 </div>
 
 > *"Wubba Lubba Dub Dub!"* — Rick Sanchez  
