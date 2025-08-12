@@ -13,14 +13,18 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
   final String title; 
 
   @override
-  Size get preferredSize => Size.fromHeight(kToolbarHeight * 2.2);
+  Size get preferredSize => Size.fromHeight(kToolbarHeight * 2.2 + 50); // Adding extra space for iOS safe area
 
   @override
   Widget build(BuildContext context) {
+
+    final topPadding = MediaQuery.of(context).padding.top; //extra space for ios 
+    
     return Container(
       color: AppColors.appBarBackground,
-      height: kToolbarHeight * 2.2, 
-      child: SafeArea(
+      height: kToolbarHeight * 2.2 + topPadding,
+      child: Padding(
+        padding: EdgeInsets.only(top: topPadding),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -58,7 +62,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
               ),
             ),
           ],
-        ),  
+        ),
       ),
     );
   }
