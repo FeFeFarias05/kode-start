@@ -49,11 +49,11 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16),
               child: Image.asset(
                 AppImages.person,
-                width: 24,
-                height: 24,
+                width: 26,
+                height: 26,
                 color: AppColors.rightIconColor,
               ),
             ),
@@ -67,36 +67,3 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
 }
 
 
-// child: Padding(
-//           padding: const EdgeInsets.only(
-//             right: 15,
-//             left: 15,
-//             top: 10,
-//           ),
-//           child: Row(
-//             crossAxisAlignment: CrossAxisAlignment.start,
-//             children: [
-//               leftIcon,
-//               Expanded(
-//                 child: Column(
-//                   children: [
-//                     Image.asset('assets/logo.png'),
-//                     Padding(
-//                       padding: const EdgeInsets.only(top: 10),
-//                       child: Text(
-//                         'CALCULADORA DE IMC',
-//                         style: TextStyle(
-//                           color: AppColors.white,
-//                         ),
-//                       ),
-//                     ),
-//                   ],
-//                 ),
-//               ),
-//               Icon(
-//                 Icons.menu,
-//                 color: AppColors.white,
-//               ),
-//             ],
-//           ),
-//         // ),

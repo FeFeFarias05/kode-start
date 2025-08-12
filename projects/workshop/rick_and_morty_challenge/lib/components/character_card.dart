@@ -12,9 +12,9 @@ class CharacterCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: AppColors.cardDecriptionColor,
+      color: AppColors.cardDescriptionColor,
       clipBehavior: Clip.antiAlias,
-      margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 15), //7.5?
+      margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.all(Radius.circular(10)),
       ),
@@ -25,23 +25,15 @@ class CharacterCard extends StatelessWidget {
           children: [
             Image.network(
               character.image,
-              height: 120, //160?
+              height: 120, //160 - 40 
               width: double.infinity,
-              fit: BoxFit.cover,
-              // errorBuilder: (context, error, stackTrace) {
-              //   return Container(
-              //     height: 200,
-              //     color: Colors.grey,
-              //     child: const Icon(Icons.error, color: Colors.white),
-              //   );
-              // },
+              fit: BoxFit.fitWidth,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Nome do personagem
                   Text(
                     character.name.toUpperCase(),
                     style: TextStyle(

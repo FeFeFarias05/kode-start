@@ -37,7 +37,7 @@ class DetailedCharacterCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: AppColors.cardDecriptionColor,
+      color: AppColors.cardDescriptionColor,
       clipBehavior: Clip.antiAlias,
       margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 17),
       shape: const RoundedRectangleBorder(
@@ -54,9 +54,9 @@ class DetailedCharacterCard extends StatelessWidget {
             ),
             child: Image.network(
               character.image,
-              height: 160,
+              height: 170,
               width: double.infinity,
-              fit: BoxFit.cover,
+              fit: BoxFit.fitWidth, 
             ),
           ),
           Padding(
