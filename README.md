@@ -6,7 +6,6 @@
 
 > *"Wubba Lubba Dub Dub!"* — Rick Sanchez  
 > Project developed with clean architecture and solid patterns, so the universe doesn't collapse... or almost.Rick and Morty Challenge 🛸  
-![Rick and Morty](https://rickandmortyapi.com/api/character/avatar/1.jpeg)  
 
 > *"Wubba Lubba Dub Dub!"* — Rick Sanchez  
 > Project developed with clean architecture and solid patterns, so the universe doesn’t collapse... or almost.  
