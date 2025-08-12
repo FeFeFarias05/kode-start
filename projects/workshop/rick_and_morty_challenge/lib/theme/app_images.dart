@@ -3,4 +3,5 @@ class AppImages {
 
   static const logo = 'assets/logo.png';
   static const person = 'assets/icon.png';
+  static const emptyState = 'assets/emptyState.png';
 }
