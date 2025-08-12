@@ -7,7 +7,7 @@ import 'package:ricky_and_morty_challenge/components/detailed_character_card.dar
 class DetailPage extends StatefulWidget {
   const DetailPage({Key? key, required this.character}) : super(key: key);
   
-  final Result character; // Recebe o personagem específico
+  final Result character; 
 
   @override
   State<DetailPage> createState() => _DetailPageState();
