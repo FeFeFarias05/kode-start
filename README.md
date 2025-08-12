@@ -5,9 +5,6 @@
 </div>
 
 > *"Wubba Lubba Dub Dub!"* — Rick Sanchez  
-> Project developed with clean architecture and solid patterns, so the universe doesn't collapse... or almost.Rick and Morty Challenge 🛸  
-
-> *"Wubba Lubba Dub Dub!"* — Rick Sanchez  
 > Project developed with clean architecture and solid patterns, so the universe doesn’t collapse... or almost.  
 
 ---
